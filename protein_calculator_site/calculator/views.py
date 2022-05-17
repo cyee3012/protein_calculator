@@ -5,3 +5,6 @@ def home(request):
 
 def about(request):
   return render(request, 'calculator/about.html', {'title': 'About'})
+
+def results(request):
+  return render(request, 'calculator/results.html', {'title': 'Results'})
