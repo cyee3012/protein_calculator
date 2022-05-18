@@ -1,18 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ProteinForm
 
+# weight = 'no weight entered'
+# system = 'no system selected'
+
 def home(request):
-  if request.method == "POST":
-    form = ProteinForm(request.POST)
-
-    if form.is_valid():
-      form.save()
-      system = form.cleaned_data['system']
-      weight = form.cleaned_data['weight']
-      return render(request, 'calculator/results.html', {'title': 'Results', 'weight': weight})
-  else:
-    form = ProteinForm()
-
   form = ProteinForm()
   return render(request, 'calculator/home.html', {'form': form})
 
@@ -20,4 +12,9 @@ def about(request):
   return render(request, 'calculator/about.html', {'title': 'About'})
 
 def results(request):
-  return render(request, 'calculator/results.html', {'title': 'Results', 'weight': 'weight'})
+  if request.method == "POST":
+    form = ProteinForm(request.POST)
+    weight = request.POST['weight']
+    system = request.POST['system']
+    print(weight)
+  return render(request, 'calculator/results.html', {'title': 'Results','weight': weight, 'system': system})
