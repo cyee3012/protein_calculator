@@ -3,7 +3,31 @@
 {% block content %}
   <h1>Protein Results</h1>
   <p>Protein results will end up here</p>
-    <h2>So you want to calculate in {{ system }}</h2>
-    <h3>Your weight is {{ weight }}{{ system }}</h3>
-
+    <h2>So you want to calculate in the {{ system }} system.</h2>
+    <h3>
+      Your weight is {{ weight }}
+      {% if system == "metric" %}
+        kgs
+      {% elif system == "imperial" %}
+        lbs
+      {% endif %}
+    </h3>
+    <h4>
+      To gain muscle, you should be eating your weight times
+      {% if system == "metric" %}
+        1.2-1.7
+      {% elif system == "imperial" %}
+        0.5-0.8
+      {% endif %}
+      of protein per day.
+    </h4>
+    <h5>
+      This means you should aim to eat around
+      {% if system == "metric" %}
+        {{ metric_protein_grams }}
+      {% elif system == "imperial" %}
+        {{ imperial_protein_grams }}
+      {% endif %}
+      grams of protein per day.
+    </h5>
 {% endblock content %}
