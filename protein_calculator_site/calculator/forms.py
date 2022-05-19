@@ -1,6 +1,6 @@
 from django import forms
 
-SYSTEM_CHOICES = [("kgs", "kgs"), ("lbs","lbs")]
+SYSTEM_CHOICES = [("metric", "kgs"), ("imperial","lbs")]
 
 class ProteinForm(forms.Form):
   system = forms.CharField(label="kgs or lbs?", widget=forms.Select(choices=SYSTEM_CHOICES))
