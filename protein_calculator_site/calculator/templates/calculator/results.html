@@ -1,33 +1,46 @@
 {% extends "calculator/base.html" %}
 
 {% block content %}
-  <h1>Protein Results</h1>
-  <p>Protein results will end up here</p>
-    <h2>So you want to calculate in the {{ system }} system.</h2>
-    <h3>
-      Your weight is {{ weight }}
-      {% if system == "metric" %}
-        kgs
-      {% elif system == "imperial" %}
-        lbs
-      {% endif %}
-    </h3>
-    <h4>
-      To gain muscle, you should be eating your weight times
-      {% if system == "metric" %}
-        1.2-1.7
-      {% elif system == "imperial" %}
-        0.5-0.8
-      {% endif %}
-      of protein per day.
-    </h4>
-    <h5>
-      This means you should aim to eat around
-      {% if system == "metric" %}
+<h1>PROTEIN RESULTS</h1>
+<div class="results">
+  <h3>YOU SHOULD EAT</h3>
+  <div class="amount">
+    {% if system == "metric" %}
         {{ metric_protein_grams }}
       {% elif system == "imperial" %}
         {{ imperial_protein_grams }}
       {% endif %}
-      grams of protein per day.
-    </h5>
+    GRAMS
+  </div>
+  <h3>OF PROTEIN PER DAY</h3>
+  <p>(screenshot this so you don't forget!)</p>
+</div>
+<div class="the-maths">
+  <h4>THE MATHS</h4>
+  <p>So you wanted to calculate in the {{ system }} system and said your weight is {{ weight }}
+    {% if system == "metric" %}
+      kgs...
+    {% elif system == "imperial" %}
+      lbs...
+    {% endif %}
+  </p>
+  <p>
+    To gain muscle, you should be eating your weight times
+    {% if system == "metric" %}
+      1.2-1.7
+    {% elif system == "imperial" %}
+      0.5-0.8
+    {% endif %}
+    of protein per day.
+  </p>
+  <p>
+    Multiple those numbers together...This means you should aim to eat around
+    {% if system == "metric" %}
+      {{ metric_protein_grams }}
+    {% elif system == "imperial" %}
+      {{ imperial_protein_grams }}
+    {% endif %}
+    grams of protein per day.
+  </p>
+</div>
 {% endblock content %}

@@ -1,16 +1,66 @@
+body {
+  background-color: #F1F5F9;
+}
+
 h1 {
-  color: red;
-  font-family: 'Comic Sans MS';
+  color: #344966;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  margin: 40px;
 }
 
 h2 {
-  color: blue;
+  color: #0D1821;
+  font-family: 'Heebo', sans-serif;
+  font-size: 25px;
+  opacity:  0.8;
 }
 
 h3 {
-  color: green;
+  color: #1D3549;
+  font-family: 'Heebo', sans-serif;
+  font-size: 30px;
+}
+
+h4  {
+  color: #344966;
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
 }
 
 p {
-  color: purple;
+  color: #8896AB;
+  font-family: 'Oxygen', sans-serif;
+}
+
+nav {
+  background-color: #E2EBF3;
+}
+
+.intructions {
+  color: #0D1821;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.amount {
+  color: #0D1821;
+  font-family: 'Heebo', sans-serif;
+  font-size: 80px;
+}
+
+.results {
+  text-align:  center;
+  padding: 50px;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+  border: solid 1px #1D3549;
+  box-shadow: 12px 12px 2px 1px #8896AB;
+}
+
+.the-maths {
+  padding: 50px;
+  margin: 10px;
 }
