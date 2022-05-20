@@ -1,12 +1,15 @@
 {% extends "calculator/base.html" %}
 
 {% block content %}
-  <h1>Calculator Homepage</h1>
+  <h1>PROTEIN CALCULATOR</h1>
+  <div class="intructions">
+    Simply select what system you would like to use and enter your weight and click "calculate!"
+  </div>
 
   <form method="post" action="/results/">
     {% csrf_token %}
     {{form.as_p}}
-    <button type="submit", name="save">Calculate!</button>
+    <button type="submit", name="save">calculate!</button>
   </form>
 
 {% endblock content %}
