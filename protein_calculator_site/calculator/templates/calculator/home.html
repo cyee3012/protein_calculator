@@ -1,15 +1,15 @@
 {% extends "calculator/base.html" %}
+{% load crispy_forms_tags %}
 
 {% block content %}
   <h1>PROTEIN CALCULATOR</h1>
   <div class="intructions">
-    Simply select what system you would like to use and enter your weight and click "calculate!"
+    Simply select what system you would like to use, enter your weight, and click "calculate!"
   </div>
 
   <form method="post" action="/results/">
     {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit", name="save">calculate!</button>
+    {% crispy form %}
   </form>
 
 {% endblock content %}
