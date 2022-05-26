@@ -1,10 +1,18 @@
 A simple app build on Django
+_________
 
-To view the app, make sure to ```cd protein_calculator```
+To clone the repo, in your terminal please ```cd <your_desired_directory>``` and then enter the following:
 
-To run the app locally, please type the following in your terminal:
+```git clone https://github.com/cyee3012/protein_calculator.git protein_calculator```
+_________
 
+To run the app locally, in your terminal make sure to:
+```cd protein_calculator/protein_calculator_site/```
+
+
+Then please enter the following in your terminal:
 ```python3 manage.py runserver```
+_________
 
 You can view the app in your browser at ```localhost:8000```
 
