@@ -2,8 +2,9 @@ asgiref==3.5.1
 backports.zoneinfo==0.2.1
 Django==4.0.4
 django-crispy-forms==1.14.0
+gunicorn==20.1.0
 numpy==1.22.2
 pgzero==1.2.1
 pygame==2.1.2
 sqlparse==0.4.2
-gunicorn==20.1.0
+whitenoise==6.1.0
