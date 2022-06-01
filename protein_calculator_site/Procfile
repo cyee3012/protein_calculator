@@ -1,1 +1,1 @@
-web: gunicorn protein_calculator.wsgi
+web: gunicorn calculator.wsgi
