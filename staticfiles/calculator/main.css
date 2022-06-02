@@ -1,0 +1,118 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+  background-color: #F1F5F9;
+  height: 100%;
+  overflow: auto;
+}
+
+h1 {
+  color: #344966;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: #0D1821;
+  font-family: 'Heebo', sans-serif;
+  font-size: 25px;
+  opacity:  0.8;
+}
+
+h3 {
+  color: #1D3549;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3vw;
+  margin: 1vw;
+}
+
+h4  {
+  color: #344966;
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  color: #8896AB;
+  font-family: 'Oxygen', sans-serif;
+}
+
+i {
+  color: #1D3549;
+}
+
+nav {
+  background-color: #E2EBF3;
+  opacity: 0.7;
+}
+
+label {
+ color: #1D3549;
+}
+
+form {
+  text-align: center;
+}
+
+#div_id_system, #div_id_weight {
+  text-align: left;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0D1821;
+}
+
+.nav-link:hover {
+  color: #A0ABBB;
+}
+
+.btn-primary {
+  color: #F1F5F9;
+  background-color: #344966;
+  border-color: #344966;
+}
+
+.btn-primary:hover {
+  color: #E2EBF3;
+  background-color: #1D3549;
+  border-color: #1D3549;
+}
+
+.intructions {
+  color: #344966;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.amount {
+  color: #0D1821;
+  font-family: 'Heebo', sans-serif;
+  font-size: 7vw;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5vh 2vw;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  border: solid 1px #1D3549;
+  box-shadow: 12px 12px 2px 1px #8896AB;
+}
+
+.results p {
+  font-size: 10px;
+}
+
+.the-maths {
+  padding: 4vw;
+  margin: 20px 0px;
+}

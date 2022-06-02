@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=29f+dupwqbknkosdv-^qw5r+$)3#epg#8lavxb(ewls(la9ic'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['protein-calculator.herokuapp.com', 'localhost']
 
