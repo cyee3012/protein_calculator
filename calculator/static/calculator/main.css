@@ -13,7 +13,6 @@ h1 {
   color: #344966;
   font-family: 'Heebo', sans-serif;
   text-align: center;
-  margin: 40px;
 }
 
 h2 {
@@ -26,7 +25,8 @@ h2 {
 h3 {
   color: #1D3549;
   font-family: 'Heebo', sans-serif;
-  font-size: 30px;
+  font-size: 3vw;
+  margin: 1vw;
 }
 
 h4  {
@@ -94,20 +94,25 @@ form {
 .amount {
   color: #0D1821;
   font-family: 'Heebo', sans-serif;
-  font-size: 80px;
+  font-size: 7vw;
 }
 
 .results {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding: 50px 20px;
-  margin: 0px 50px;
+  padding: 5vh 2vw;
   background-color: #FFFFFF;
   opacity: 0.8;
   border: solid 1px #1D3549;
   box-shadow: 12px 12px 2px 1px #8896AB;
 }
 
+.results p {
+  font-size: 10px;
+}
+
 .the-maths {
-  padding: 50px;
-  margin: 10px;
+  padding: 4vw;
+  margin: 20px 0px;
 }
